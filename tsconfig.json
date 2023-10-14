@@ -21,7 +21,12 @@
     "noFallthroughCasesInSwitch": true,
 
     "declaration": true,
-    "typeRoots": ["./dist/index.d.ts"]
+    "typeRoots": ["./dist/index.d.ts"],
+
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
   },
   "include": ["src", "index.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]

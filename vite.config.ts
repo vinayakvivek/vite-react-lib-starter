@@ -1,3 +1,4 @@
+import path from "path";
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import * as packageJson from "./package.json";
@@ -25,5 +26,10 @@ export default defineConfig({
     },
     sourcemap: true,
     emptyOutDir: true,
+  },
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
+    },
   },
 });

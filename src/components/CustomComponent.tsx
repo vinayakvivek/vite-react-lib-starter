@@ -1,4 +1,5 @@
 import yoda from "../assets/yoda.webp";
+import { Button } from "@/components/ui/button";
 
 interface CustomComponentProps {
   name: string;
@@ -11,6 +12,7 @@ export const CustomComponent = ({ name }: CustomComponentProps) => {
       <p className="w-fit font-bold text-xl">
         May the Force be with you, {name}
       </p>
+      <Button>shadch/ui button</Button>
     </div>
   );
 };
